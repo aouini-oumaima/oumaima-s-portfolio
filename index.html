@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,23 +118,78 @@
                 demoLink: "./assets/video4.mp4",
                 demoImage: "./assets/images/trav.png"
             },
-        
         ];
-
+        const aiProjects = [
+            {
+                title: "ArtHub",
+                date: "September 2025",
+                description: [
+                    "Rapidly prototyped an art hub platform showcasing digital artworks and community features using Trickle AI.",
+                    "Leveraged AI to generate responsive UI components and interactive elements in minutes."
+                ],
+                technologies: ["Trickle AI", "AI-Generated UI"],
+                demoLink: "./assets/artHub.mp4",
+                demoImage: "./assets/images/arthub.png"
+            },
+            {
+                title: "Entraide Website",
+                date: "September 2025",
+                description: [
+                    "Built a collaborative platform connecting students, parents, and teachers for educational support and communication using Lovable AI.",
+                    "AI-assisted in creating real-time chat, user profiles, and secure messaging features swiftly."
+                ],
+                technologies: ["Lovable AI", "AI-Generated Web App"],
+                demoLink: "./assets/entraide.mp4",
+                demoImage: "./assets/images/EntrAide.png"
+            },
+            {
+                title: "Art Gallery with Banani",
+                date: "September 2025",
+                description: [
+                    "Developed an immersive art gallery website featuring virtual tours and artwork displays using Lovable AI.",
+                    "AI tools enabled quick generation of dynamic galleries and responsive layouts."
+                ],
+                technologies: ["Lovable AI", "AI-Generated Gallery"],
+                demoLink: "./assets/art-gallery.mp4",
+                demoImage: "./assets/images/artspace.png"
+            },
+            {
+                title: "atelier with Banani",
+                date: "September 2025",
+                description: [
+                    "Created a modern art gallery site with Banani AI, including search, filters, and e-commerce integration for artists.",
+                    "Utilized AI for instant prototyping of elegant, user-friendly interfaces."
+                ],
+                technologies: ["Banani AI", "AI-Generated E-commerce"],
+                demoLink: "./assets/atelier.mp4",
+                demoImage: "./assets/images/atelier.png"
+            },
+            {
+                title: "NeonCompute",
+                date: "September 2025",
+                description: [
+                    "Designed a futuristic computing dashboard and toolset with Banani AI, focusing on neon-themed visuals and computational utilities.",
+                    "AI accelerated the development of interactive data visualizations and core functionalities."
+                ],
+                technologies: ["Banani AI", "AI-Generated Dashboard"],
+                demoLink: "./assets/banani.mp4",
+                demoImage: "./assets/images/neoncompute.png"
+            }
+        ];
         const figmaProjects = [
             {
                 title: "Mobile App UI Design",
                 date: "January 2024",
                 description: "Designed a user-friendly mobile app interface for a fitness tracking application with a focus on clean aesthetics and intuitive navigation.",
                 screenshot: "./assets/images/figma.png",
-                figmaLink: "https://www.figma.com/file/sample-fitness-app"
+              
             },
             {
                 title: "E-commerce Website Mockup",
                 date: "March 2024",
                 description: "Created a high-fidelity mockup for an e-commerce platform, emphasizing responsive design and modern UI/UX principles.",
                 screenshot: "./assets/images/figma2.png",
-                figmaLink: "https://www.figma.com/file/sample-ecommerce"
+              
             },
             {
                 title: "Cake Shop Animation",
@@ -150,7 +206,6 @@
                 figmaLink: "https://your-hosting-service.com/video6.mp4"
             }
         ];
-
         const skills = {
             Frontend: [
                 { name: "HTML", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" },
@@ -192,16 +247,13 @@
                 { name: "Stripe (Payments)", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stripe.svg" },
                 { name: "Socket.IO (Real-Time Communication)", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/socketdotio.svg" },
             ],
-
- ArtificialIntelligence: [
-  { name: "Grok", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/x.svg" }, 
-  { name: "ChatGPT", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg" },
-  { name: "Claude", logo: "./assets/images/logo claude.png" },
-  { name: "Gemini", logo: "./assets/images/gemini.jpeg" },
-  { name: "FlutterFlow", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/flutter.svg" }
-
-],
-
+            ArtificialIntelligence: [
+                { name: "Grok", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/x.svg" },
+                { name: "ChatGPT", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg" },
+                { name: "Claude", logo: "./assets/images/logo claude.png" },
+                { name: "Gemini", logo: "./assets/images/gemini.jpeg" },
+                { name: "FlutterFlow", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/flutter.svg" }
+            ],
             Other: [
                 { name: "Microsoft Word", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/microsoftword.svg" },
                 { name: "Microsoft Excel", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/microsoftexcel.svg" },
@@ -210,7 +262,6 @@
                 { name: "Canva", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/canva.svg" },
             ],
         };
-
         const certifications = [
             {
                 title: "Full Stack JavaScript Web Developer",
@@ -224,20 +275,19 @@
                 date: "March 2024",
                 image: "./assets/images/code.png"
             },
-              {
-                title: "prompt Engineering",
+            {
+                title: "Prompt Engineering",
                 issuer: "Simplilearn",
-                date: "september 2025",
+                date: "September 2025",
                 image: "./assets/images/certif.jpeg"
             },
         ];
-
         const Navbar = () => {
             const [isOpen, setIsOpen] = React.useState(false);
             return (
                 <nav className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
                     <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-                        <h1 className="text-lg font-playfair font-semibold text-slate-800 flex items-center">
+                        <h1 className="text-base font-playfair font-semibold text-slate-800 flex items-center">
                             <img src="./assets/images/ME.jpg" alt="Oumaima Aouini" className="w-7 h-7 rounded-full mr-2 border-2 border-violet-200 shadow-sm object-cover" />
                             Oumaima Aouini
                         </h1>
@@ -249,20 +299,20 @@
                             </button>
                         </div>
                         <ul className={`md:flex md:space-x-6 ${isOpen ? 'block' : 'hidden'} absolute md:static bg-white w-full md:w-auto left-0 top-12 p-3 md:p-0 shadow-lg md:shadow-none transition-all duration-300`}>
-                            <li><a href="#about" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center"><i className="fas fa-user mr-1"></i>About</a></li>
-                            <li><a href="#skills" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center"><i className="fas fa-code mr-1"></i>Skills</a></li>
-                            <li><a href="#projects" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center"><i className="fas fa-briefcase mr-1"></i>Projects</a></li>
-                            <li><a href="#figma-designs" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center"><i className="fas fa-palette mr-1"></i>Designs</a></li>
-                            <li><a href="#education" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center"><i className="fas fa-graduation-cap mr-1"></i>Education</a></li>
-                            <li><a href="#certifications" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center"><i className="fas fa-certificate mr-1"></i>Certifications</a></li>
-                            <li><a href="#hobbies" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center"><i className="fas fa-heart mr-1"></i>Hobbies</a></li>
-                            <li><a href="#contact" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center"><i className="fas fa-envelope mr-1"></i>Contact</a></li>
+                            <li><a href="#about" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center text-xs"><i className="fas fa-user mr-1"></i>About</a></li>
+                            <li><a href="#skills" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center text-xs"><i className="fas fa-code mr-1"></i>Skills</a></li>
+                            <li><a href="#figma-designs" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center text-xs"><i className="fas fa-palette mr-1"></i>Designs</a></li>
+                            <li><a href="#projects" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center text-xs"><i className="fas fa-briefcase mr-1"></i>Projects</a></li>
+                            <li><a href="#ai-projects" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center text-xs"><i className="fas fa-robot mr-1"></i>AI Projects</a></li>
+                            <li><a href="#education" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center text-xs"><i className="fas fa-graduation-cap mr-1"></i>Education</a></li>
+                            <li><a href="#certifications" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center text-xs"><i className="fas fa-certificate mr-1"></i>Certifications</a></li>
+                            <li><a href="#hobbies" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center text-xs"><i className="fas fa-heart mr-1"></i>Hobbies</a></li>
+                            <li><a href="#contact" className="block text-slate-600 hover:text-violet-600 focus:text-violet-600 py-1 transition-colors duration-200 font-medium flex items-center text-xs"><i className="fas fa-envelope mr-1"></i>Contact</a></li>
                         </ul>
                     </div>
                 </nav>
             );
         };
-
         const Hero = () => {
             return (
                 <section className="py-16 text-center relative overflow-hidden">
@@ -292,7 +342,6 @@
                 </section>
             );
         };
-
         const About = () => {
             return (
                 <section id="about" className="py-16 bg-white">
@@ -329,7 +378,6 @@
                 </section>
             );
         };
-
         const Skills = () => {
             return (
                 <section id="skills" className="py-16 bg-white">
@@ -357,7 +405,6 @@
                 </section>
             );
         };
-
         const ProjectCard = ({ project, index, onDemoClick }) => {
             return (
                 <div className="bg-white p-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-slate-200 group">
@@ -381,7 +428,6 @@
                 </div>
             );
         };
-
         const DemoModal = ({ project, isOpen, onClose }) => {
             if (!isOpen || !project) return null;
             const isVideo = project.demoLink && project.demoLink.includes('.mp4') || project.figmaLink && project.figmaLink.includes('.mp4');
@@ -430,21 +476,17 @@
                 </div>
             );
         };
-
         const Projects = () => {
             const [selectedProject, setSelectedProject] = React.useState(null);
             const [isModalOpen, setIsModalOpen] = React.useState(false);
-
             const handleDemoClick = (project) => {
                 setSelectedProject(project);
                 setIsModalOpen(true);
             };
-
             const handleCloseModal = () => {
                 setIsModalOpen(false);
                 setSelectedProject(null);
             };
-
             return (
                 <section id="projects" className="py-16 bg-white">
                     <div className="container mx-auto px-4">
@@ -459,7 +501,31 @@
                 </section>
             );
         };
-
+        const AIProjects = () => {
+            const [selectedProject, setSelectedProject] = React.useState(null);
+            const [isModalOpen, setIsModalOpen] = React.useState(false);
+            const handleDemoClick = (project) => {
+                setSelectedProject(project);
+                setIsModalOpen(true);
+            };
+            const handleCloseModal = () => {
+                setIsModalOpen(false);
+                setSelectedProject(null);
+            };
+            return (
+                <section id="ai-projects" className="py-16 bg-white">
+                    <div className="container mx-auto px-4">
+                        <h2 className="text-3xl font-playfair font-bold text-slate-800 mb-8 text-center">Projects Created with AI in Few Moments</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {aiProjects.map((project, index) => (
+                                <ProjectCard key={index} project={project} index={index} onDemoClick={handleDemoClick} />
+                            ))}
+                        </div>
+                        <DemoModal project={selectedProject} isOpen={isModalOpen} onClose={handleCloseModal} />
+                    </div>
+                </section>
+            );
+        };
         const FigmaProjectCard = ({ figmaProject, index, onDemoClick }) => {
             return (
                 <div className="bg-white p-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-slate-200 group">
@@ -471,26 +537,22 @@
                     <p className="text-violet-600 text-xs font-medium mb-3">{figmaProject.date}</p>
                     <p className="text-slate-600 mb-3 text-xs leading-relaxed">{figmaProject.description}</p>
                     <button onClick={() => onDemoClick(figmaProject)} className="inline-flex items-center text-violet-600 hover:text-violet-700 font-medium transition-colors duration-200 cursor-pointer text-sm">
-                        <i className="fab fa-figma mr-1"></i> View in Figma
+                        <i className="fab fa-figma mr-1"></i> View Figma
                     </button>
                 </div>
             );
         };
-
         const FigmaDesigns = () => {
             const [selectedFigmaProject, setSelectedFigmaProject] = React.useState(null);
             const [isModalOpen, setIsModalOpen] = React.useState(false);
-
             const handleDemoClick = (figmaProject) => {
                 setSelectedFigmaProject(figmaProject);
                 setIsModalOpen(true);
             };
-
             const handleCloseModal = () => {
                 setIsModalOpen(false);
                 setSelectedFigmaProject(null);
             };
-
             return (
                 <section id="figma-designs" className="py-16 bg-white">
                     <div className="container mx-auto px-4">
@@ -505,7 +567,6 @@
                 </section>
             );
         };
-
         const CertificationCard = ({ cert, index }) => {
             return (
                 <div className="bg-white p-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-slate-200 group">
@@ -518,7 +579,6 @@
                 </div>
             );
         };
-
         const Certifications = () => {
             return (
                 <section id="certifications" className="py-16 bg-white">
@@ -533,7 +593,6 @@
                 </section>
             );
         };
-
         const Hobbies = () => {
             return (
                 <section id="hobbies" className="py-16 bg-white">
@@ -571,7 +630,6 @@
                 </section>
             );
         };
-
         const Education = () => {
             return (
                 <section id="education" className="py-16 bg-white">
@@ -608,7 +666,6 @@
                 </section>
             );
         };
-
         const Contact = () => {
             return (
                 <section id="contact" className="py-16 bg-white">
@@ -663,7 +720,6 @@
                 </section>
             );
         };
-
         const Footer = () => {
             return (
                 <footer className="bg-slate-800 text-white py-8">
@@ -687,7 +743,6 @@
                 </footer>
             );
         };
-
         const App = () => {
             return (
                 <div>
@@ -695,8 +750,9 @@
                     <Hero />
                     <About />
                     <Skills />
-                    <Projects />
                     <FigmaDesigns />
+                    <Projects />
+                    <AIProjects />
                     <Education />
                     <Certifications />
                     <Hobbies />
@@ -705,7 +761,6 @@
                 </div>
             );
         };
-
         ReactDOM.render(<App />, document.getElementById('root'));
     </script>
     <style>
