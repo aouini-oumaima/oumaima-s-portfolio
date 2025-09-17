@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,15 +180,13 @@
                 title: "Mobile App UI Design",
                 date: "January 2024",
                 description: "Designed a user-friendly mobile app interface for a fitness tracking application with a focus on clean aesthetics and intuitive navigation.",
-                screenshot: "./assets/images/figma.png",
-              
+                screenshot: "./assets/images/figma.png",                           
             },
             {
                 title: "E-commerce Website Mockup",
                 date: "March 2024",
                 description: "Created a high-fidelity mockup for an e-commerce platform, emphasizing responsive design and modern UI/UX principles.",
-                screenshot: "./assets/images/figma2.png",
-              
+                screenshot: "./assets/images/figma2.png",                           
             },
             {
                 title: "Cake Shop Animation",
@@ -271,7 +268,7 @@
             },
             {
                 title: "JavaScript Algorithms",
-                issuer: "freeCodeCamp",
+                issuer: "FreeCodeCamp",
                 date: "March 2024",
                 image: "./assets/images/code.png"
             },
@@ -280,6 +277,12 @@
                 issuer: "Simplilearn",
                 date: "September 2025",
                 image: "./assets/images/certif.jpeg"
+            },
+              {
+                title: "Front End Development Libraries",
+                issuer: "FreeCodeCamp",
+                date: "September 2025",
+                image: "./assets/images/freecodecamp front end.png"
             },
         ];
         const Navbar = () => {
@@ -536,9 +539,6 @@
                     <h3 className="text-lg font-semibold text-slate-800 mb-2 group-hover:text-violet-600 transition-colors duration-200">{figmaProject.title}</h3>
                     <p className="text-violet-600 text-xs font-medium mb-3">{figmaProject.date}</p>
                     <p className="text-slate-600 mb-3 text-xs leading-relaxed">{figmaProject.description}</p>
-                    <button onClick={() => onDemoClick(figmaProject)} className="inline-flex items-center text-violet-600 hover:text-violet-700 font-medium transition-colors duration-200 cursor-pointer text-sm">
-                        <i className="fab fa-figma mr-1"></i> View Figma
-                    </button>
                 </div>
             );
         };
